@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const students = [
+            {id: 1, name: "Aarav", age: 20, gender: "Male", course: "Java", marks: 85, city: "Pune", feesPaid: true},
+            {id: 2, name: "Ananya", age: 21, gender: "Female", course: "React", marks: 92, city: "Mumbai", feesPaid: true},
+            {id: 3, name: "Rahul", age: 22, gender: "Male", course: "JavaScript", marks: 76, city: "Delhi", feesPaid: false},
+            {id: 4, name: "Priya", age: 20, gender: "Female", course: "Python", marks: 88, city: "Pune", feesPaid: true},
+            {id: 5, name: "Rohan", age: 23, gender: "Male", course: "Java", marks: 67, city: "Nashik", feesPaid: false},
+            {id: 6, name: "Sneha", age: 21, gender: "Female", course: "React", marks: 95, city: "Nagpur", feesPaid: true},
+            {id: 7, name: "Vikram", age: 24, gender: "Male", course: "Python", marks: 72, city: "Mumbai", feesPaid: true},
+            {id: 8, name: "Neha", age: 20, gender: "Female", course: "JavaScript", marks: 81, city: "Pune", feesPaid: false},
+            {id: 9, name: "Amit", age: 22, gender: "Male", course: "React", marks: 89, city: "Delhi", feesPaid: true},
+            {id: 10, name: "Pooja", age: 21, gender: "Female", course: "Java", marks: 74, city: "Nashik", feesPaid: true},
+
+            {id: 11, name: "Karan", age: 23, gender: "Male", course: "Python", marks: 91, city: "Pune", feesPaid: false},
+            {id: 12, name: "Isha", age: 20, gender: "Female", course: "React", marks: 86, city: "Mumbai", feesPaid: true},
+            {id: 13, name: "Sahil", age: 22, gender: "Male", course: "JavaScript", marks: 65, city: "Nagpur", feesPaid: false},
+            {id: 14, name: "Kavya", age: 21, gender: "Female", course: "Java", marks: 93, city: "Pune", feesPaid: true},
+            {id: 15, name: "Manish", age: 24, gender: "Male", course: "React", marks: 78, city: "Delhi", feesPaid: true},
+            {id: 16, name: "Riya", age: 20, gender: "Female", course: "Python", marks: 84, city: "Nashik", feesPaid: false},
+            {id: 17, name: "Aditya", age: 22, gender: "Male", course: "Java", marks: 90, city: "Mumbai", feesPaid: true},
+            {id: 18, name: "Simran", age: 23, gender: "Female", course: "JavaScript", marks: 73, city: "Pune", feesPaid: true},
+            {id: 19, name: "Nikhil", age: 21, gender: "Male", course: "React", marks: 87, city: "Nagpur", feesPaid: false},
+            {id: 20, name: "Meera", age: 20, gender: "Female", course: "Java", marks: 96, city: "Delhi", feesPaid: true},
+
+            {id: 21, name: "Arjun", age: 23, gender: "Male", course: "Python", marks: 69, city: "Pune", feesPaid: false},
+            {id: 22, name: "Aditi", age: 21, gender: "Female", course: "React", marks: 82, city: "Mumbai", feesPaid: true},
+            {id: 23, name: "Varun", age: 22, gender: "Male", course: "JavaScript", marks: 94, city: "Delhi", feesPaid: true},
+            {id: 24, name: "Shreya", age: 20, gender: "Female", course: "Python", marks: 77, city: "Pune", feesPaid: false},
+            {id: 25, name: "Akash", age: 24, gender: "Male", course: "Java", marks: 83, city: "Nashik", feesPaid: true},
+            {id: 26, name: "Nandini", age: 21, gender: "Female", course: "React", marks: 98, city: "Nagpur", feesPaid: true},
+            {id: 27, name: "Yash", age: 22, gender: "Male", course: "Python", marks: 71, city: "Mumbai", feesPaid: false},
+            {id: 28, name: "Tanvi", age: 20, gender: "Female", course: "JavaScript", marks: 89, city: "Pune", feesPaid: true},
+            {id: 29, name: "Suresh", age: 23, gender: "Male", course: "React", marks: 75, city: "Delhi", feesPaid: false},
+            {id: 30, name: "Divya", age: 21, gender: "Female", course: "Java", marks: 91, city: "Nashik", feesPaid: true},
+
+            {id: 31, name: "Mohit", age: 22, gender: "Male", course: "Python", marks: 80, city: "Pune", feesPaid: true},
+            {id: 32, name: "Pallavi", age: 20, gender: "Female", course: "React", marks: 87, city: "Mumbai", feesPaid: false},
+            {id: 33, name: "Ritesh", age: 24, gender: "Male", course: "JavaScript", marks: 66, city: "Nagpur", feesPaid: true},
+            {id: 34, name: "Komal", age: 21, gender: "Female", course: "Java", marks: 79, city: "Pune", feesPaid: true},
+            {id: 35, name: "Harsh", age: 23, gender: "Male", course: "React", marks: 92, city: "Delhi", feesPaid: false},
+            {id: 36, name: "Sakshi", age: 20, gender: "Female", course: "Python", marks: 85, city: "Nashik", feesPaid: true},
+            {id: 37, name: "Raj", age: 22, gender: "Male", course: "Java", marks: 88, city: "Mumbai", feesPaid: true},
+            {id: 38, name: "Mansi", age: 21, gender: "Female", course: "JavaScript", marks: 70, city: "Pune", feesPaid: false},
+            {id: 39, name: "Dev", age: 23, gender: "Male", course: "React", marks: 97, city: "Nagpur", feesPaid: true},
+            {id: 40, name: "Poonam", age: 20, gender: "Female", course: "Java", marks: 81, city: "Delhi", feesPaid: true},
+
+            {id: 41, name: "Ravi", age: 24, gender: "Male", course: "Python", marks: 73, city: "Pune", feesPaid: false},
+            {id: 42, name: "Muskan", age: 21, gender: "Female", course: "React", marks: 90, city: "Mumbai", feesPaid: true},
+            {id: 43, name: "Abhishek", age: 22, gender: "Male", course: "JavaScript", marks: 84, city: "Delhi", feesPaid: true},
+            {id: 44, name: "Jyoti", age: 20, gender: "Female", course: "Python", marks: 76, city: "Pune", feesPaid: false},
+            {id: 45, name: "Sameer", age: 23, gender: "Male", course: "Java", marks: 95, city: "Nashik", feesPaid: true},
+            {id: 46, name: "Nisha", age: 21, gender: "Female", course: "React", marks: 83, city: "Nagpur", feesPaid: true},
+            {id: 47, name: "Vivek", age: 22, gender: "Male", course: "Python", marks: 68, city: "Mumbai", feesPaid: false},
+            {id: 48, name: "Anjali", age: 20, gender: "Female", course: "JavaScript", marks: 93, city: "Pune", feesPaid: true},
+            {id: 49, name: "Gaurav", age: 24, gender: "Male", course: "React", marks: 79, city: "Delhi", feesPaid: false},
+            {id: 50, name: "Sonia", age: 21, gender: "Female", course: "Java", marks: 89, city: "Nashik", feesPaid: true}
+        ];
+
+        //Questions
+        // Map:-
+        // Create a new array containing only the names of all students.
+
+        let name = students.map((student) => (student.name));
+        console.log(name);
+
+        // Create a new array containing only the ages of all students.
+
+        let age = students.map((student) => (student.age));
+        console.log(age);
+
+        // Create an array containing the name and course of every student.
+        let nameCourse = students.map((student) => ("name : " + student.age + " course : " + student.course));
+        console.log(nameCourse);
+
+
+        // Add 5 bonus marks to every student's marks.
+
+        let addBounce = students.map((student) => (student.marks + 5))
+        console.log(addBounce);
+
+        // Create a new array containing student names in uppercase.
+
+        let nameUppercase = students.map((student) => (student.name.toUpperCase()))
+        console.log(nameUppercase);
+
+
+        // Create an array containing only the id of every student.
+
+        let id = students.map((student) => (student.id))
+        console.log(id);
+
+        // Create a new array where every student has a new property status: "Active".
+
+        let addStatus = students.map((student) => (
+            {
+                ...student,
+                status: "Active"
+            }
+
+        ));
+        console.log(addStatus);
+
+        // console.log(students);
+
+
+        // 1. Students whose marks are greater than 80
+        const marksAbove80 = students.filter((student) => student.marks > 80);
+        console.log(marksAbove80);
+
+        // 2. Students whose marks are less than 70
+        const marksBelow70 = students.filter((student) => student.marks < 70);
+        console.log(marksBelow70);
+
+        // 3. Students studying React
+        const reactStudents = students.filter((student) => student.course === "React");
+        console.log(reactStudents);
+
+        // 4. Students studying Java
+        const javaStudents = students.filter((student) => student.course === "Java");
+        console.log(javaStudents);
+
+        // 5. Students from Pune
+        const puneStudents = students.filter((student) => student.city === "Pune");
+        console.log(puneStudents);
+
+        // 6. Students from Mumbai
+        const mumbaiStudents = students.filter((student) => student.city === "Mumbai");
+        console.log(mumbaiStudents);
+
+        // 7. All female students
+        const femaleStudents = students.filter((student) => student.gender === "Female");
+        console.log(femaleStudents);
+
+        // 8. All male students
+        const maleStudents = students.filter((student) => student.gender === "Male");
+        console.log(maleStudents);
+
+        // 9. Students whose age is greater than 21
+        const ageAbove21 = students.filter((student) => student.age > 21);
+        console.log(ageAbove21);
+
+        // 10. Students whose fees are not paid
+        const unpaidStudents = students.filter((student) => student.feesPaid === false);
+        console.log(unpaidStudents);
+
+        // 11. Students whose fees are paid
+        const paidStudents = students.filter((student) => student.feesPaid === true);
+        console.log(paidStudents);
+
+        // 12. Students who scored between 70 and 90 (inclusive)
+        const marksBetween70And90 = students.filter(
+            (student) => student.marks >= 70 && student.marks <= 90
+        );
+        console.log(marksBetween70And90);
+
+        // 13. Students who scored more than 90
+        const marksAbove90 = students.filter((student) => student.marks > 90);
+        console.log(marksAbove90);
+
+        // 14. React students who scored more than 85
+        const reactAbove85 = students.filter(
+            (student) => student.course === "React" && student.marks > 85
+        );
+        console.log(reactAbove85);
+
+        // 15. Female students from Pune
+        const femaleFromPune = students.filter(
+            (student) => student.gender === "Female" && student.city === "Pune"
+        );
+        console.log(femaleFromPune);
+
+        // 16. Students from Delhi who have paid their fees
+        const delhiPaidStudents = students.filter(
+            (student) => student.city === "Delhi" && student.feesPaid === true
+        );
+        console.log(delhiPaidStudents);
+
+        // 17. Students older than 22 with marks greater than 80
+        const olderAndHighScoring = students.filter(
+            (student) => student.age > 22 && student.marks > 80
+        );
+        console.log(olderAndHighScoring);
+
+        // 18. Students learning either Java or React
+        const javaOrReact = students.filter(
+            (student) => student.course === "Java" || student.course === "React"
+        );
+        console.log(javaOrReact);
+
+        // 19. Python students who have not paid fees
+        const unpaidPython = students.filter(
+            (student) => student.course === "Python" && student.feesPaid === false
+        );
+        console.log(unpaidPython);
+
+        // 20. Students with marks greater than 90 who are from Mumbai
+        const highScoringMumbai = students.filter(
+            (student) => student.marks > 90 && student.city === "Mumbai"
+        );
+        console.log(highScoringMumbai);
+
+
+        // 1. Check whether at least one student scored more than 95.
+        const someAbove95 = students.some((student) => student.marks > 95);
+        console.log(someAbove95); // true
+
+        // 2. Check whether at least one student has not paid their fees.
+        const someUnpaid = students.some((student) => student.feesPaid === false);
+        console.log(someUnpaid); // true
+
+        // 3. Check whether at least one student is learning React.
+        const someReact = students.some((student) => student.course === "React");
+        console.log(someReact); // true
+
+        // 4. Check whether all students have marks greater than 50.
+        const allAbove50 = students.every((student) => student.marks > 50);
+        console.log(allAbove50); // true
+
+        // 5. Check whether all students have paid their fees.
+        const allFeesPaid = students.every((student) => student.feesPaid === true);
+        console.log(allFeesPaid); // false
+
+        // 6. Check whether all students are above the age of 18.
+        const allAbove18 = students.every((student) => student.age > 18);
+        console.log(allAbove18); // true
+
+        // 7. Check whether every student has a valid name.
+        const allValidNames = students.every(
+            (student) => typeof student.name === "string" && student.name.trim().length > 0
+        );
+        console.log(allValidNames); // true
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="Kam()">Click</button>
+    <script>
+
+
+
+        function Kam() {
+            alert("Hello")
+        }
+
+        //default function
+        //parameter function
+        //return type function
+        //arrow function
+        //Function Expression
+
+        //callback function
+        //anonymous function
+        //higher order function
+
+
+        //default function
+        //   function Add(){
+        //    console.log(10+20)
+        //   }
+        //   Add()
+        //   Add()
+
+
+        //parameter
+
+        //   Greet();
+        //   function Greet(name="Guest"){
+        //     console.log("Hello "+name )
+        //   }
+
+        //   Greet("Atul") // Hello Atul
+        //   Greet()      //Hello Undefined
+
+
+        //return type
+        // function Sub(a,b){
+        //    return(a-b)
+        // }
+        // let result=Sub(20,10)
+        // console.log(result)
+
+
+        // function Add(a,b,...c){
+        //     console.log(a+b)
+        //     console.log(c)
+        // }
+
+        // Add(10,34,56,78);
+
+
+        //Arrow Function
+        //   const Greet=()=>{
+        //      console.log("Hello")
+        //   }
+        //   Greet();
+
+
+        //anonymous Function  (IIFE)
+        //   (()=>{
+        //      console.log("Hello")
+        //   })()
+
+
+        //   let demo=function(){
+        //     console.log("Hello")
+        //   }
+
+        //   demo()
+
+
+        //hof
+        function A(callback) {
+            console.log("A")
+            B()
+        }
+        A(B)
+
+        // console.log(x)
+
+        //callback function
+        function B() {
+            console.log("B")
+        }
+
+
+
+        document.addEventListener("click", demo)
+
+
+        function demo() {
+            alert("Hello")
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

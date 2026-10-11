@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        
+
+        // for(init;cond;updation){block}
+
+        // print even numbers from 1 to 10
+        //  1     2    4
+        // for(let i=1;i<=10;i++){
+        //     //3
+        //     console.log(i)
+        // }
+
+
+        // print even numbers from 1 to 10
+        //   for(let i=1;i<=10;i++){
+        //     if(i%2==0){
+        //         console.log(i)
+        //     }
+        // }
+
+
+        // while(cond){
+        //     //block
+        // }
+
+        // let i=100;
+
+        // while(i<=10){
+        //     console.log(i);
+        //     i++;
+        // }
+
+
+
+        // let i=1;
+        //         do{
+        //          console.log(i);
+        //          i++;
+        //         }while(i>=10)
+
+
+
+
+
+        
+       let username;
+       let password;
+
+       let count=0;
+
+        do {
+                if (count == 0) {
+                    username = prompt("Enter Username");
+                    password = prompt("Enter Password");
+                } else {
+                    username = prompt("Enter reUsername");
+                    password = prompt("Enter rePassword");
+                }
+                if ((username == "admin") && (password == "admin@123")) {
+                    alert("Login Successfull...")
+                }
+                else {
+
+                    alert("Invalid Credentials please re-enter ")
+                    count++;
+                    if (count == 3) {
+                        alert("Please Try after Sometimes");
+                        break;
+                    }
+                }
+            } while (!((username == "admin") && (password == "admin@123")))
+
+
+    // for(i=1;i<=10;i++){
+    //     if(i==3){
+    //         break;
+    //     }
+    //     console.log(i)
+    // }
+
+
+     
+        // TASK
+// 1.Print numbers from 1 to 10 using a all loop.
+//2. Print numbers from 100 to 200 using a all loop.
+// 3.Print  numbers from 100 to 1 using a all loop.
+// 4.Print even  numbers from 50 to 10 using a all loop.
+// 5.Print addition of number from 10 to 100 using all loop 
+//6. Print addition of number from 59to 100 using all loop 
+//7. Print all even numbers between 1 and 20 using a all loop.
+// 8.Print the multiplication table of a number (e.g., 5) up to 10.
+// 9.Calculate the sum of numbers from 1 to n (input).
+// 10.Print all numbers from 1 to 100 but skip multiples of 5 using continue.
+// 11.Print numbers from 1 to 50 but stop when number reaches 25 using break.
+
+// 12. Count how many numbers between 1–100 are divisible by 3
+//  Print numbers from 10 to 1 (reverse)
+//  Sum of digits of a number
+//  Reverse a number
+
+
+// 13. Menu-driven program:
+// 👉 Show options repeatedly until user exits
+// 1. Add
+// 2. Subtract
+// 3. Exit
+ 
+
+
+//14. ATM Simulation
+// 👉 Show menu until user chooses exit
+// 1. Check Balance
+// 2. Deposit
+// 3. Withdraw
+// 4. Exit
+
+// 15.Print numbers from 1 to 100 but:
+// If number divisible by 3 → print "Fizz"
+// If divisible by 5 → print "Buzz"
+// If divisible by both → print "FizzBuzz"
+
+// 16. Sum of Even and Odd Numbers
+// Take:
+// let start = 1;
+// let end = 50;
+// Using a loop:
+// Calculate the sum of even numbers.
+// Calculate the sum of odd numbers.
+// Count even numbers.
+// Count odd numbers.
+
+
+
+
+      </script>
+</body>
+</html>

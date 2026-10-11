@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students = {
+            id: 1,
+            name: "Rameshwar",
+            age: 22
+        }
+
+        console.log(students.name);
+        console.log(students["name"]);
+
+        // To prevent any modification in object we use the freeze method.
+
+        // Object.freeze(students);
+
+        // To only updation we use the seal() method . that method only update the object , they do not add or delete the any properties of the object.
+        // Object.seal(students);
+
+        // students.name = "Ayub";
+        // students.email = "ayub@gmail.com";
+        // delete students.age;
+
+        // console.log(students);
+
+        // let students=[
+        //     {
+        //         id:1,
+        //         name:"Ajay",
+        //         age:13
+        //     },
+        //     {
+        //       id:2,
+        //         name:"Ashish",
+        //         age:27 
+        //     },
+        //     {
+        //         id:3,
+        //         name:"Anil",
+        //         age:26
+        //     }
+        // ]
+
+        // console.log(students[2].name)
+        
+        // for(i=0;i<students.length;i++){
+        //     console.log(students[i].name)
+        // }
+
+        // by using filter print the name of student whose age is greater than 20
+
+        // let filterData=students.filter((student)=>student.age >20).map((student)=>student.name)
+        // console.log(filterData)
+
+
+        //spread Operator 
+        //rest Operator
+        //destructuring
+
+            //  let student={
+            //     id:1,
+            //     name:"Ajay",
+            //     age:13
+            // }
+
+            // let{id:n1,name:Fname,...restData}=student;
+            // console.log(n1)
+            // console.log(Fname)
+            // console.log(restData)
+
+
+    </script>
+</body>
+
+</html>

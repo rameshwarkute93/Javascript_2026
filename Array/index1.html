@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let arr=[1,2,3,4,5,6];
+
+        // some , every , find , findIndex , includes , sort , indexOf , lastIndexOf ,map , filter, reduce
+
+        // let newData=arr.some((n)=>{return n%2})
+        // console.log(newData);
+        // let newData=arr.every((n)=>{return n%2})
+        // console.log(newData);
+
+        //    let findnum=arr.find((n)=> n>3);
+        //    console.log(findnum)
+        //    let findnum=arr.findIndex((n)=> n>3);
+        //    console.log(findnum)
+
+        // console.log(arr.includes(4));
+
+
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let newArr = arr.map((n) => n + 2);
+        console.log(newArr)
+
+
+        let filterData = arr.filter((n) => n % 2 == 0);
+        console.log(filterData)
+
+        console.log(arr)
+
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let bill = arr.reduce((a, b) => a + b, 0)
+        console.log(bill)
+
+
+        //     let products = [{
+        //         name: "Mobile-1",
+        //         price: 2000,
+        //     }, {
+        //         name: "Mobile-2",
+        //         price: 1000,
+        //     },
+        //     {
+        //         name: "Mobile-3",
+        //         price: 3000,
+        //     },
+        //     {
+        //         name: "Mobile-4",
+        //         price: 6000,
+        //     },
+
+        // ]
+
+
+        // find names those initial letter is a
+        let names = ["Aman", "Ashish", "Sagar", "Sam", "Atul"];
+
+
+        let filterNames = names.map((name) => name.toLowerCase()).filter((name) => name.startsWith("a"));
+        console.log(filterNames)
+
+
+        //         Part 1: map() (5 Questions)
+
+        // Q1.
+        // Double every number in the array.
+        // const numbers = [5, 10, 15, 20, 25];
+
+        // let newNumbers = numbers.map((num) => num * num);
+        // console.log(newNumbers);
+
+
+
+        // Q2.
+        // Multiply every number by 10.
+        // const numbers = [2, 4, 6, 8, 10];
+
+        // let newNumbers = numbers.map((num) => num * 10);
+        // console.log(newNumbers);
+
+
+
+
+        // Q3.
+        // Convert all names into uppercase.
+        // const names = ["rahul", "amit", "priya", "neha"];
+
+        // let newNames = names.map((name) => name.toUpperCase());
+        // console.log(newNames);
+
+
+
+
+        // Q4.
+        // Create a new array containing the length of each word.
+        // const words = ["JavaScript", "React", "HTML", "CSS"];
+
+        // let newWordLength = words.map((word) => word.length);
+        // console.log(newWordLength);
+
+
+
+
+        // Q5.
+        // Add "Mr. " before every name.
+        // const names1 = ["Rahul", "Amit", "Sachin", "Neha"];
+
+        // let newNames = names1.map((name) => "Mr. " + name);
+        // console.log(newNames);
+
+
+        // Part 2: filter() (5 Questions)
+
+        // Q6.
+        // Find all even numbers.
+        // const numbers = [12, 15, 20, 23, 40, 55, 60];
+
+        // let newNum = numbers.filter((n) => n % 2 == 0);
+        // console.log(newNum);
+
+
+
+
+
+
+        // Q7.
+        // Find all odd numbers.
+        // const numbers = [10, 13, 24, 35, 42, 51];
+        // let newNum = numbers.filter((num) => num % 2 != 0);
+        // console.log(newNum);
+
+
+        // Q8.
+        // Find all numbers greater than 50.
+        // const numbers = [15, 70, 45, 90, 52, 30];
+        // let newNum = numbers.filter((num) => num > 50);
+        // console.log(newNum);
+
+
+
+
+
+        // Q9.
+        // Filter all names that start with the letter "A".
+        // const names = ["Amit", "Rahul", "Akash", "Neha", "Anjali"];
+
+        // let newNum = numbers.filter((name) => name.startsWith("A"));
+        // console.log(newNum);
+
+
+        // Q10.
+        // Find all words whose length is greater than 5.
+        // const words = ["HTML", "JavaScript", "CSS", "Bootstrap", "React"];
+
+        // let newNum = words.filter((word) => word.length > 5);
+        // console.log(newNum);
+
+
+
+        // Task 11: Salary Processing
+        // let salaries = [18000, 25000, 32000, 15000, 45000, 28000, 52000, 19000];
+        // Perform:
+        // 1. Use filter() to select salaries greater than 25000.
+        // 2. Use map() to increase each selected salary by 10%.
+        // 3. Use filter() to keep salaries greater than 30000 after increment.
+        // 4. Use reduce() to calculate the total salary.
+
+        // Task 12: Product Prices
+        // let prices = [499, 1200, 799, 2500, 999, 1500, 399, 3200];
+        // Perform:
+        // 1. Use filter() to select prices greater than 1000.
+        // 2. Use map() to apply a 20% discount.
+        // 3. Use filter() to select discounted prices greater than 1000.
+        // 4. Use reduce() to calculate the total price.
+
+
+        //  some() (5 Questions)
+
+        // Q1.
+        // Check if any number is negative.
+        // const numbers = [10, 20, -5, 40];
+
+        // let newArrs = numbers.some((n) => n > 0);
+        // console.log(newArrs);
+
+
+
+        // Q2.
+        // Check if any number is greater than 100.
+        // const numbers = [20, 35, 60, 150, 80];
+        // let newArrs = numbers.some((n) => n > 100);
+        // console.log(newArrs);
+
+
+        // Q3.
+        // Check whether any name starts with the letter "S".
+        // const names1 = ["Rahul", "Amit", "Sachin", "Neha"];
+        // let newArrs = names1.some((n) => n.startsWith("S"));
+        // console.log(newArrs);
+
+
+        // Q4.
+        // Check whether any word has more than 10 characters.
+        // const words = ["React", "JavaScript", "HTML", "Bootstrap"];
+        // let newArrs = words.some((n) => n.length > 10);
+        // console.log(newArrs);
+
+
+
+        // Q5.
+        // Check whether any number is divisible by 7.
+        // const numbers = [10, 15, 21, 30, 40];
+        // let newArrs = numbers.some((n) => n % 7 == 0);
+        // console.log(newArrs);
+
+        //every() (5 Questions)
+        // Q1.
+        // Check whether all numbers are positive.
+        // const numbers = [5, 10, 20, 30];
+
+        // let newArrs = numbers.every((n) => n > 0);
+        // console.log(newArrs);
+
+
+
+
+        // Q2.
+        // Check whether every number is even.
+        // const numbers = [2, 4, 6, 8, 10];
+        // let newArrs = numbers.every((n) => n % 2 == 0);
+        // console.log(newArrs);
+
+
+        // Q3.
+        // Check whether every name has at least 4 characters.
+        // const names1 = ["Rahul", "Amit", "Neha", "Priya"];
+        // let newArrs = names1.every((n) => n.length >= 4);
+        // console.log(newArrs);
+
+
+        // Q4.
+        // Check whether every word starts with a capital letter.
+        // const words = ["React", "JavaScript", "HTML", "Bootstrap"];
+        // let newArrs = words.every((word) => word[0] === word[0].toUpperCase());
+        // console.log(newArrs);
+
+
+        // Q5.
+        // Check whether every number is greater than 10.
+        // const numbers = [15, 20, 35, 40];
+        // let newArrs = numbers.every((n) => n > 10);
+        // console.log(newArrs);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

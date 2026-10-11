@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   let arr=[1,2,3,4,5];
+        //   let arr=new Array(4)
+        //   console.log(arr)
+        //   console.log(arr.length)
+
+        //accessing
+        //1
+        //   console.log(arr[0])
+        //   console.log(arr[1])
+
+        //   2
+        //   for(let i=0;i<arr.length;i++){
+        //       console.log(arr[i])
+        //     }
+
+        //3 forEach 
+
+        //   arr.forEach((n)=>{
+        //       console.log(n)
+        //    })
+
+
+        //4  for in // for of 
+
+        //elements
+        //   for(number of arr){
+        //     console.log(number)
+        //   }
+
+        //index
+        //   for(number in arr){
+        //     console.log(arr[number])
+        //   }
+
+        //5
+        //  destructuring
+        //rest operator
+        //   let arr=[1,2,3,4];
+        //     let[n1,n2,n3,...restData]=arr;
+        //         console.log(n1);
+        //         console.log(n2);
+        //         console.log(n3);
+        //         console.log(restData);
+
+
+        // console.log(Math.max(...arr))
+        // console.log(Math.max(1,2,3,4))
+
+        // let arr1=[1,2,3]
+        // let arr2=[4,5,6]
+        // let arr3=arr1.concat(arr2)
+        // console.log(arr3)
+
+        // let arr4=[...arr1,...arr2,50,67,98]
+        // console.log(arr4)
+
+        // let color=["red","green","yellow","pink"]
+        // console.log(color)
+        // console.log(color.length)
+        // console.log(color.push("violet")) //
+        // console.log(color) //
+        // console.log(color.pop()) //
+        // console.log(color) //
+        // console.log(color.unshift("Violet")) //
+        // console.log(color) //
+        // console.log(color.shift()) //
+
+        //slice(start,end) end is excluding - copy 
+        // splice(start,deleteCount,"NewElement") - cut , insert
+        let color = ["red", "green", "yellow", "pink"]
+        //   let newColor=color.slice(0,2)  //
+        //   let newColor=color.splice(1,0,...["purple","jhjk"])  //
+        let newColor = color.splice(1, 0, "purple", "jhjk")  //
+        console.log(newColor)
+        console.log(color)
+
+
+
+        //       Task 1: Access Array Elements
+        // Create an array:
+        // let students = ["Rahul", "Amit", "Sneha", "Priya", "Neha"];
+
+        // Perform the following:
+        // 1. Print the first element.
+        // 2. Print the last element.
+        // 3. Print the second and fourth elements.
+        // 4. Print the length of the array.
+        // 5. Print the element at index 2.
+        // Task 2: Add Students Using push()
+        // Create:
+        // let students = ["Rahul", "Amit", "Sneha"];
+
+        // Perform:
+        // 1. Add "Priya" at the end.
+        // 2. Add "Neha" and "Kiran" at the end.
+        // 3. Print the final array.
+        // 4. Print the length after adding the students.
+        // Task 3: Remove Students Using pop()
+        // Create:
+        // let students = ["Rahul", "Amit", "Sneha", "Priya", "Neha"];
+
+        // Perform:
+        // 1. Remove the last student.
+        // 2. Store the removed student in a variable.
+        // 3. Print the removed student.
+        // 4. Remove one more student.
+        // 5. Print the final array.
+        // Task 4: shift() and unshift()
+        // Create:
+        // let queue = ["Amit", "Rahul", "Sneha"];
+
+        // Perform:
+        // 1. Add "Priya" at the beginning.
+        // 2. Add "Neha" and "Kiran" at the beginning.
+        // 3. Remove the first student.
+        // 4. Store the removed student in a variable.
+        // 5. Print the final queue.
+        // Task 5: Shopping Cart
+        // Create:
+        // let cart = ["Laptop", "Mouse", "Keyboard"];
+
+        // Perform:
+        // 1. Add "Monitor" at the end.
+        // 2. Add "USB Cable" at the beginning.
+        // 3. Remove the last product.
+        // 4. Remove the first product.
+        // 5. Print the final cart.
+        // Use: push(), pop(), shift(), unshift().
+        // Task 6: Extract Products Using slice()
+        // Create:
+        // let products = [
+        //     "Laptop",
+        //     "Mobile",
+        //     "Tablet",
+        //     "Keyboard",
+        //     "Mouse",
+        //     "Monitor"
+        // ];
+
+        // Using slice():
+        // 1. Extract the first 3 products.
+        // 2. Extract "Tablet" and "Keyboard".
+        // 3. Extract the last 2 products.
+        // 4. Create a new array containing "Mobile", "Tablet", and "Keyboard".
+        // 5. Print the original array and extracted arrays.
+        // Note: Do not modify the original array.
+        // Task 7: Remove Products Using splice()
+        // Create:
+        // let products = [
+        //     "Laptop",
+        //     "Mobile",
+        //     "Tablet",
+        //     "Keyboard",
+        //     "Mouse"
+        // ];
+
+        // Using splice():
+        // 1. Remove "Tablet".
+        // 2. Remove "Keyboard" and "Mouse".
+        // 3. Print the removed elements.
+        // 4. Print the remaining products.
+        // Task 8: Insert Products Using splice()
+        // Create:
+        // let products = ["Laptop", "Mobile", "Mouse"];
+
+        // Using splice():
+        // 1. Insert "Tablet" between "Laptop" and "Mobile".
+        // 2. Insert "Keyboard" and "Monitor" before "Mouse".
+        // 3. Print the final array.
+        // Expected:
+        // ["Laptop", "Tablet", "Mobile", "Keyboard", "Monitor", "Mouse"]
+
+        // Task 9: Replace Array Elements
+        // Create:
+        // let colors = ["Red", "Green", "Blue", "Yellow", "Black"];
+
+        // Using splice():
+        // 1. Replace "Green" with "White".
+        // 2. Replace "Blue" and "Yellow" with "Pink" and "Purple".
+        // 3. Print the final array.
+        // Task 10: Array Destructuring
+        // Create:
+        // let students = ["Rahul", "Amit", "Sneha", "Priya"];
+
+        // Using array destructuring:
+        // 1. Store "Rahul" in student1.
+        // 2. Store "Amit" in student2.
+        // 3. Skip "Sneha".
+        // 4. Store "Priya" in student4.
+        // 5. Print all variables.
+        // Task 11: Destructuring With Default Values
+        // Create:
+        // let employees = ["Sachin", "Rahul"];
+
+        // Using destructuring:
+        // employee1 = Sachin
+        // employee2 = Rahul
+        // employee3 = "Not Available"
+
+        // Use a default value for employee3.
+        // Task 12: Destructuring With Rest Operator
+        // Create:
+        // let numbers = [10, 20, 30, 40, 50, 60];
+
+        // Using destructuring and the rest operator:
+        // first = 10
+        // second = 20
+        // remaining = [30, 40, 50, 60]
+
+        // Print all three variables.
+        // Task 13: First Element + Remaining Elements
+        // Create:
+        // let fruits = [
+        //     "Apple",
+        //     "Banana",
+        //     "Mango",
+        //     "Orange",
+        //     "Grapes"
+        // ];
+
+        // Using destructuring and rest operator:
+        // firstFruit = "Apple"
+        // remainingFruits = ["Banana", "Mango", "Orange", "Grapes"]
+
+        // Do not use array indexes.
+        // Task 14: First Two + Remaining
+        // Create:
+        // let marks = [85, 76, 92, 68, 90, 88];
+
+        // Using destructuring:
+        // firstMark = 85
+        // secondMark = 76
+        // remainingMarks = [92, 68, 90, 88]
+
+        // Print the variables.
+        // Task 15: Array Manipulation Challenge
+        // Create:
+        // let students = ["Rahul", "Amit", "Sneha", "Priya", "Neha"];
+
+        // Perform the following operations in order:
+        // 1. Add "Kiran" at the end.
+        // 2. Add "Pooja" at the beginning.
+        // 3. Remove the last student.
+        // 4. Remove the first student.
+        // 5. Replace "Sneha" with "Anjali" using splice().
+        // 6. Extract the first 3 students using slice().
+        // 7. Use destructuring to store the first student separately and the remaining students in another array.
+        // 8. Print the final array.
+        // Task 16: Shopping Cart Challenge
+        // Create:
+        // let cart = ["Laptop", "Mobile", "Tablet", "Mouse", "Keyboard"];
+
+        // Perform:
+        // 1. Add "Monitor" at the end.
+        // 2. Add "USB" at the beginning.
+        // 3. Remove "Keyboard" using splice().
+        // 4. Replace "Tablet" with "iPad".
+        // 5. Create a new array containing "Mobile" and "iPad" using slice().
+        // 6. Use destructuring to get the first product.
+        // 7. Store all remaining products using the rest operator.
+        // 8. Print all results.
+        // Task 17: Employee Array Challenge
+        // Create:
+        // let employees = [
+        //     "Rahul",
+        //     "Amit",
+        //     "Sneha",
+        //     "Priya",
+        //     "Kiran",
+        //     "Neha"
+        // ];
+
+        // Perform:
+        // 1. Add "Pooja" at the end.
+        // 2. Add "Rohan" at the beginning.
+        // 3. Remove the first employee.
+        // 4. Remove the last employee.
+        // 5. Remove "Sneha" using splice().
+        // 6. Extract "Priya" and "Kiran" using slice().
+        // 7. Use destructuring to get the first two employees.
+        // 8. Store all remaining employees using the rest operator.
+        // Task 18: Predict the Output
+        // Without running the code, find the output:
+        // let arr = [10, 20, 30];
+
+        // arr.push(40);
+        // arr.unshift(5);
+        // arr.pop();
+        // arr.shift();
+
+        // console.log(arr);
+
+        // Task 19: Predict the Output
+        // let arr = ["A", "B", "C", "D", "E"];
+
+        // let result = arr.slice(1, 4);
+
+        // console.log(result);
+        // console.log(arr);
+
+        // Answer:
+        // 1. What is result?
+        // 2. What is arr?
+        // 3. Does slice() modify the original array?
+        // Task 20: Predict the Output
+        // let arr = ["A", "B", "C", "D"];
+
+        // let removed = arr.splice(1, 2);
+
+        // console.log(removed);
+        // console.log(arr);
+
+        // Answer:
+        // 1. What is removed?
+        // 2. What is arr?
+        // 3. How many elements were removed?
+        // Task 21: Destructuring Output
+        // Predict the output:
+        // let numbers = [10, 20, 30, 40, 50];
+
+        // let [a, b, ...rest] = numbers;
+
+        // console.log(a);
+        // console.log(b);
+        // console.log(rest);
+
+        // Task 22: Combined Challenge
+        // Create:
+        // let products = [
+        //     "Laptop",
+        //     "Mobile",
+        //     "Tablet",
+        //     "Monitor",
+        //     "Keyboard",
+        //     "Mouse"
+        // ];
+
+        // Perform all of the following:
+        // 1. Add "Printer" using push().
+        // 2. Add "USB" using unshift().
+        // 3. Remove the last item using pop().
+        // 4. Remove the first item using shift().
+        // 5. Remove "Monitor" using splice().
+        // 6. Insert "Smart Watch" before "Mouse" using splice().
+        // 7. Create a new array containing the first 3 products using slice().
+        // 8. Use destructuring to store the first product separately.
+        // 9. Use the rest operator to store all remaining products.
+        // 10. Print the original array, sliced array, first product, and remaining products.
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
